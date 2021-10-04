@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!--bootstrap/bootstrap icon-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+        <link href="styles.css" rel="stylesheet">
+
+        <!--flavico-->
+        <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+        <link rel="manifest" href="./site.webmanifest">
+        <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
+        <title>Cheesecakes</title>
+
+        <!--js pop up script-->
+        <script src="./popup.js" ></script>
+    </head>
+    <body>
+        <header>
+            <!--bootstrap navbar-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+              <a class="navbar-brand" href="./index.html">Cheesecakes</a>
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" id="ny" href="./ny.html">NY style</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="basque" href="./basque.html">Basque</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="japanese" href="./japanese.html">Japanese</a>
+                  </li>
+                </ul>
+                <div id="social">
+                  <a class="nav-item" href="https://github.com/MatchaCrisp" target="_blank"><i class="bi bi-github"></i></a>
+                  <a class="nav-item" href="https://www.linkedin.com/in/junyan-ye-47551bab/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="container-fluid">
+                <!--bootstrap carousel-->
+                <div id="cakeDemo" class="carousel carousel-dark slide" data-ride="carousel">
+
+                <!-- Wrapper for carousel items -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://image.zype.com/5b0820fbdc4390132f0001ca/5b400b584b32992a31061b98/custom_thumbnail/1080.jpeg?1532615986" class="d-block w-100" alt="NY style cheesecake">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://madamngrecipe.com/wp-content/uploads/2021/03/Basque-Burnt-Cheesecake-1-980x551.jpg" class="d-block w-100" alt="Basque cheesecake">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://cookingwithdog.com/wp-content/uploads/2016/09/souffle-cheesecake-15.jpg" class="d-block w-100" alt="Japanese cotton cheesecake">
+                    </div>
+                </div>
+
+                <!-- Carousel controls -->
+                <a class="carousel-control-prev" href="#cakeDemo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#cakeDemo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+                </div>
+            </div>
+
+            <!--text-content-->
+            <div class="text container-fluid" id ="intro">
+
+                <p class="first-tabbed">
+                    <b class="text-start">Thousands</b> of years ago, culinary geniuses in ancient Greece created the cheesecake, or rather, the ancestor to what we come to know as the modern cheesecake.
+                    For the ancient recipe calls for the pounding of flour and honey into patties of cheese, which one can imagine has a fairly different flavor profile to what
+                    cheesecake has become.
+                    The love for this dessert and cheese in general persisted through history. It found popularity in several cultures, notable among them, the British.
+                    Therefore when the Americas were colonized, the dessert came along. Now up until this point the dessert has evolved to be more intricate in preparation,
+                    more stringent in ingredients, and fancy spices such as rosewater, vanilla, lemon zest were making appearances. However it was only in the 1930s that the US
+                    replaced cheese curds with cream cheese, and thus, what we could call the "modern", or New York style cheesecake was born.
+                </p>
+                <p class="first-tabbed">
+                    Fast forward to the 21st century, cheesecake has boomed in popularity yet again. People just love the creamy, cheesy, sweet decadent dessert. However there are now
+                    many ways of making cheesecakes differently than before, so different in fact, one can put these into separate categories of cheesecakes from the New York style.
+                    Here we explore the New York, Basque, and the Japanese (cotton) style cheesecake, but this list is by no means comprehensive. It is merely a selection of cheesecakes
+                    that the author feels represented the versatility of the dessert well.
+                </p>
+
+                <p class="first-tabbed">
+                    To learn more about the world of cheesecakes, head over to the <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="ext-link">International Cheesecake History Preservation Society <small>(ICHPS)</small></a>.
+                </p>
+            </div>
+
+
+        </main>
+
+        <!--js pop up-->
+        <div class="card" id="pop-up">
+          <div class="card-body">
+            <h5 class="card-title">Did you know:</h5>
+            <p class="card-text" id="pop-txt">Rick Astley was born in 1966.</p>
+            <div class="align-button">
+                <button type="button" class="btn btn-outline-primary" id="pop-dismiss">Dismiss</button>
+                <button type="button" class="btn btn-outline-danger" id="pop-stop">Do not show again</button>
+            </div>
+          </div>
+        </div>
+
+        <!--bootstrap js-->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    </body>
+</html>

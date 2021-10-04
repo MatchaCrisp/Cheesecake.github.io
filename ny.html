@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!--bootstrap/bootstrap icon-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+        <link href="styles.css" rel="stylesheet">
+        <!--flavico-->
+        <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+        <link rel="manifest" href="./site.webmanifest">
+        <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
+        <title>Cheesecakes</title>
+
+        <!--js pop up script-->
+        <script src="./popup.js" ></script>
+    </head>
+    <body>
+        <header>
+            <!--bootstrap navbar-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+              <a class="navbar-brand" href="./index.html">Cheesecakes</a>
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="ny" href="./ny.html">NY style</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="basque" href="./basque.html">Basque</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="japanese" href="./japanese.html">Japanese</a>
+                  </li>
+                </ul>
+                <div id="social">
+                  <a class="nav-item" href="https://github.com/MatchaCrisp" target="_blank"><i class="bi bi-github"></i></a>
+                  <a class="nav-item" href="https://www.linkedin.com/in/junyan-ye-47551bab/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="container-fluid" id = "nyPic">
+                <img src="https://image.zype.com/5b0820fbdc4390132f0001ca/5b400b584b32992a31061b98/custom_thumbnail/1080.jpeg?1532615986" class="d-block w-100" alt="NY style cheesecake">
+            </div>
+            <!--text-content-->
+            <div class="text container-fluid" id ="nyEx">
+
+                <p class="first-tabbed">
+                    <b class="text-start">The</b> classic New York style cheesecake is perhaps what everyone immediately thinks of when they hear the word: "cheesecake".
+                    Creamy, Cheesy, Decadent fillings sitting atop a graham cracker crust, this dessert converted many who are skeptical of desserts
+                    involving cheese, even those who never really liked cheese before.
+                </p>
+                <p class="first-tabbed">
+                    The cream cheese and eggs filling makes this cheesecake technically a custard, and makes for an excellent base for all sorts of flavors.
+                    Chocolate, cherry, you name it, someone probably has tried to bake it into a cheesecake.
+                </p>
+                <p class="first-tabbed">
+                    This cake has a few gotchas that makes it somewhat more intimidating for beginner bakers. The requirement for a springform pan and a waterbath
+                    makes for a bad combo; this is easily avoided with extra-wide alluminum foil all around (careful! regular 12 inch aluminum foils don't go
+                    up the side of the springform pan high enough to prevent leaking). Cheesecakes also love to crack; a good amount of water in the waterbath,
+                    and a good distance between the cake and the top heating element usually will help. It also feels like you won't know when the cheesecake
+                    is done baking, after all, the thing is like a cream cheese after baking anyway! But this is only a misconception, the toothpick trick will
+                    totally work.
+                </p>
+                <p class="first-tabbed">
+                    Despite these potential difficulties, baking a cheesecake can also be said to be slightly easier. Having to sift flour into a batter, prevent
+                    gluten formation while making sure the flours are properly integrated can be a pain for other cakes, but cheesecakes can be flourless! Hoorah!
+                </p>
+
+            </div>
+
+        </main>
+
+        <!--js pop up-->
+        <div class="card" id="pop-up">
+          <div class="card-body">
+            <h5 class="card-title">Did you know:</h5>
+            <p class="card-text" id="pop-txt">Rick Astley was born in 1966.</p>
+            <div class="align-button">
+                <button type="button" class="btn btn-outline-primary" id="pop-dismiss">Dismiss</button>
+                <button type="button" class="btn btn-outline-danger" id="pop-stop">Do not show again</button>
+            </div>
+          </div>
+        </div>
+
+        <!--bootstrap js-->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    </body>
+</html>

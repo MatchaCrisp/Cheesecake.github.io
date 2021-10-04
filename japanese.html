@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!--bootstrap/bootstrap icon-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+        <link href="styles.css" rel="stylesheet">
+
+        <!--flavico-->
+        <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+        <link rel="manifest" href="./site.webmanifest">
+        <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
+        <title>Cheesecakes</title>
+
+        <!--js pop up script-->
+        <script src="./popup.js" ></script>
+    </head>
+    <body>
+        <header>
+            <!--bootstrap navbar-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+              <a class="navbar-brand" href="./index.html">Cheesecakes</a>
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" id="ny" href="./ny.html">NY style</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="basque" href="./basque.html">Basque</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" id="japanese" href="./japanese.html">Japanese</a>
+                  </li>
+                </ul>
+                <div id="social">
+                  <a class="nav-item" href="https://github.com/MatchaCrisp" target="_blank"><i class="bi bi-github"></i></a>
+                  <a class="nav-item" href="https://www.linkedin.com/in/junyan-ye-47551bab/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+
+            </nav>
+        </header>
+
+        <main>
+            <div class="container-fluid" id = "japanesePic">
+                <img src="https://cookingwithdog.com/wp-content/uploads/2016/09/souffle-cheesecake-15.jpg" class="d-block w-100" alt="Japanese cotton cheesecake">
+            </div>
+            <!--text-content-->
+            <div class="text container-fluid" id ="japaneseEx">
+
+                <p class="first-tabbed">
+                    <b class="text-start">If</b> you surveyed 100 people ahead of a Family Feud game on characteristics of a cheesecake, "dense" and "decadent" would probably get more than a few
+                    votes. And they'd be right, we'd dig our fork in and the cheesecake wouldn't give, when it enters our mouths it would melt like a custard, not
+                    bounce like a sponge cake. But what if I told you it is possible to have a cake so fluffy it is jiggly, yet full of creamy and cheesy goodness?
+                    Enter the Japanese style cotton cheesecake, viral images and videos of this kind of cheesecake jiggling and bouncing around on a plate are
+                    everywhere on the internet. Its secret? Egg whites beaten to glossy, stiff peaks. add that back into the batter with some vanilla, and bake
+                    at lower temperatures with a waterbath. What comes out of the oven is a classic looking cake with a golden brown top. The only giveaway is
+                    its irresistable aroma of sweet cream cheese, and its unbelievably soft texture as it is moved from pan to plate.
+                </p>
+                <p class="first-tabbed">
+                    The cake while warm taste like the best part of spongecakes and cheesecakes combined into one delicious and fluffy slice. But even if you had
+                    to refrigerate the cake, don't be upset the cake now looks and tastes different. Embrace the fact that there's two right ways to enjoy this dessert!
+                    A cold slice of this is like a less dense, somewhat more eggy version of a NY style cheesecake, but with some deliciously flaky crumbs.
+                    If you have not been able to try this cheesecake out, we highly encourage you to, we promise you won't be disappointed.
+                </p>
+
+            </div>
+
+        </main>
+
+        <!--js pop up-->
+        <div class="card" id="pop-up">
+          <div class="card-body">
+            <h5 class="card-title">Did you know:</h5>
+            <p class="card-text" id="pop-txt">Rick Astley was born in 1966.</p>
+            <div class="align-button">
+                <button type="button" class="btn btn-outline-primary" id="pop-dismiss">Dismiss</button>
+                <button type="button" class="btn btn-outline-danger" id="pop-stop">Do not show again</button>
+            </div>
+          </div>
+        </div>
+
+        <!--bootstrap js-->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    </body>
+</html>
