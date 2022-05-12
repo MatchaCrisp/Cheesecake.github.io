@@ -8,4 +8,13 @@ An index with intro to website, and 3 posts about different kinds of cheesecakes
 * Built using HTML, CSS, Bootstrap, and Vanilla JS.
 * Carousel, icons, navbar are all bootstrap.
 
+## changelog
+### ported
+ - ported from the cs50 ide
+
+### revisit
+ - reorganized readme
+ - added meta tags
+ - added rel noreferrer to external links
+ 
 ### This app is for demonstration/education purposes only.
